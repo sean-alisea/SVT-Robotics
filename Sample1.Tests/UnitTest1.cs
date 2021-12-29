@@ -24,10 +24,7 @@ namespace MLS.ServiceGateway.Cybersource.UnitTests
 				.SetBasePath(System.AppContext.BaseDirectory)
 				.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 
-			IConfiguration configuration = builder.Build();
-
-			// Set Environment variable so repository classes will work
-			//System.Environment.SetEnvironmentVariable("APPINSIGHTS_INSTRUMENTATIONKEY", configuration["APPINSIGHTS_INSTRUMENTATIONKEY"]);			
+			IConfiguration configuration = builder.Build();	
 		}
 
 		[TestMethod]
